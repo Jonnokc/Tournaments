@@ -1,0 +1,117 @@
+<html>
+
+    <Head>
+        <title>Javascript</title>
+        <style type="text/css">
+            .red {
+                color: red;
+            }
+
+            .large {
+                font-size: 200%;
+            }
+
+            #green {
+                color: orange;
+                font-size: 150%;
+            }
+
+            .blue {
+                color: blue;
+                background-color: orange;
+            }
+
+            .circle {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                float: left;
+                margin-right: 50px;
+            }
+
+            #red-circle {
+                background-color: red;
+
+            }
+
+            #blue-circle {
+                background-color: blue;
+
+            }
+
+            #green-circle {
+                background-color: green;
+
+            }
+        </style>
+    </Head>
+
+    <body>
+        <p id="user_name">Hello World!</p>
+        <button type="button" name="button" id="myButton">Change Text</button>
+
+        <p id="second_paragraph">Javascript is ....</p>
+        <button type="button" name="button" id="second_button">Append Text</button>
+
+        <p id="no_content"></p>
+        <button type="button" name="button" id="third_button">Magic Text</button>
+
+        <p id="more_text">This is some more text</p>
+        <button type="button" name="button" id="style_button">Magic Text</button>
+        <br>
+        <br>
+
+        <div class="circle" id="red-circle"></div>
+        <div class="circle" id="blue-circle"></div>
+        <div class="circle" id="green-circle"></div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <input type="text" name="" value="" id="input_text">
+        <button type="button" name="button" id="input_button">Meow!</button>
+        <p id="input_paragraph">this is some text</p>
+
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function() {
+                document.getElementById("user_name").innerHTML = 'It works!';
+            }
+
+            document.getElementById("second_button").onclick = function() {
+                document.getElementById("second_paragraph").innerHTML = "I think " + document.getElementById("second_paragraph").innerHTML + " awesome";
+            }
+
+            document.getElementById("third_button").onclick = function() {
+                document.getElementById("no_content").innerHTML = 'Text out of thin air!';
+            }
+
+            document.getElementById("style_button").onclick = function() {
+                document.getElementById("more_text").style.color = "Blue";
+            }
+
+            // hides the red circle when clicked
+            document.getElementById("red-circle").onclick = function() {
+                document.getElementById("red-circle").style.display = "None";
+            }
+            // hides the blue circle when clicked
+            document.getElementById("blue-circle").onclick = function() {
+                document.getElementById("blue-circle").style.display = "None";
+            }
+            // hides the green circle when clicked
+            document.getElementById("green-circle").onclick = function() {
+                document.getElementById("green-circle").style.display = "None";
+            }
+            // takes the value from the input box and updates the paragraph
+            document.getElementById("input_button").onclick = function() {
+                document.getElementById("input_paragraph").innerHTML = document.getElementById("input_text").value
+            }
+        </script>
+
+    </body>
+
+</html>
