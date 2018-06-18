@@ -77,6 +77,54 @@
         <button type="button" name="button" id="input_button">Meow!</button>
         <p id="input_paragraph">this is some text</p>
 
+        <script type="text/javascript">
+
+            document.getElementById("guess").onclick = function() {
+                var myNumber = document.getElementById("myNumber").value;
+
+                var gotIt = false;
+
+                var numberOfGuesses = 1;
+
+                while (gotIt == false) {
+
+                    var guess = Math.random();
+
+                    guess = guess * 6;
+
+                    guess = Math.floor(guess);
+
+                    if (guess == myNumber) {
+                        gotIt = True;
+
+                        alert("Got it! It was a " + guess + ". It took me " + numberOfGuesses + " guesses.")
+
+                    } else {
+
+                        numberOfGuesses++;
+                    }
+
+                }
+
+            }
+
+            function doAGuess(correctAnswer) {
+
+
+
+            }
+            function average(a, b) {
+                return ((a + b) / 2);
+
+            }
+
+            var x = 5;
+
+            var y = 10;
+
+            alert(average(x,y));
+
+        </script>
 
         <script type="text/javascript">
             document.getElementById("myButton").onclick = function() {

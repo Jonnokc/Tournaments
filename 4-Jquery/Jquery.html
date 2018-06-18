@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <style type="text/css" media="screen">
+
+            #circle {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+            }
+
+            .square {
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                margin: 10px;
+            }
+
+        </style>
+
+    </head>
+
+
+
+    <body>
+
+        <div id="circle"> </div>
+
+        <!-- <div class="square"> </div>
+
+        <div class="square"> </div> -->
+
+        <p>This is some text</p>
+
+        <iframe src="https://www.codestars.com/" width="400px" height="200px"></iframe>
+
+        <script type="text/javascript">
+
+            $("#circle").click(function(event) {
+                $("p").html("This text has changed!");
+                alert($("p").html());
+
+
+            $("iframe").attr('src', 'https://www.ecowebhosting.co.uk');
+
+            });
+
+        </script>
+
+         <!--  jQuery testing to confirm it is installed-->
+        <!-- <script type="text/javascript">
+            if (typeof jQuery == "undefined") {
+
+                alert("jQuery is not installed!");
+            } else {
+
+                alert("jQuery is installed correctly!");
+            }
+        </script> -->
+
+    </body>
+</html>
